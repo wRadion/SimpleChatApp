@@ -1,0 +1,23 @@
+﻿<Window x:Class="ChatApp.ChooseModeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Choisir le mode" Width="192px" Height="160px">
+    <Grid Margin="16px">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Bouton "Mode Serveur" qui permet de lancer l'application en mode Serveur+Client -->
+        <Button x:Name="Server" Grid.Row="0" Margin="0 0 0 8px" Content="Mode Serveur" Click="Server_Click" />
+
+        <!-- Bouton "Mode Client" qui permet de lancer l'application en mode Client -->
+        <Button x:Name="Client" Grid.Row="1" Margin="0 8px 0 0" Content="Mode Client" Click="Client_Click" />
+    </Grid>
+</Window>
